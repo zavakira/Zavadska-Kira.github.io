@@ -1,0 +1,93 @@
+:root {
+    --main-color: #1D11C8;
+    --secondary-color: #4A59FD;
+    --btn-color: #FFFDD0;
+    --background-color: #F4F4F4;
+    --txt-secondary-color: #0B1216;
+    /* тут розписую всі кольори які в мене є і які належать певним змінним*/
+
+    --mob-padding: 50px;
+    --ipad-padding: 50px;
+    /* відступи для телефона*/
+    --max-width: 1380px;
+    /* всі відступи (обмеження далі якого не розширюється)*/
+
+}
+
+html body {
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1rem;        /* = 16px */
+    line-height: 1.2;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--txt-secondary-color);
+}
+
+em {
+    font-style: italic;
+}
+h1 {
+  font-size: 6.75rem;   /* 108 / 16 */
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 4rem;      /* 64 / 16 */
+  line-height: 1;
+}
+
+h3 {
+  font-size: 1.5rem;    /* 24 / 16 */
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 1.5rem;    /* 24 / 16 */
+}
+
+h5 {
+  font-size: 1rem;      /* 16 / 16 */
+}
+
+h6 {
+  font-size: 1.25rem;   /* 20 / 16 */
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--secondary-color);
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+h3 { font-size: 1.5rem; }
+
+h2 { font-size: 2rem; }
+
+h1 { font-size: 4rem; }
+
+header>.inside,
+footer>.inside,
+section>.inside {
+    max-width: var(--max-wigth);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--ipad-padding);
+    padding-right: var(--ipad-padding);
+}
+
+@media (max-width:640px) {
+
+    header>.inside,
+    footer>.inside,
+    section>.inside {
+
+        padding-left: var(--mob-padding);
+        padding-right: var(--mob-padding);
+    }
+}
