@@ -1,0 +1,75 @@
+:root {
+    --main-color: #1D11C8;
+    --secondary-color: #4A59FD;
+    --btn-color: #FFFDD0;
+    --background-color: #F4F4F4;
+    --txt-secondary-color: #0B1216;
+    /* тут розписую всі кольори які в мене є і які належать певним змінним*/
+
+    --mob-padding: 24px;
+    --ipad-padding: 40px;
+    /* відступи для телефона*/
+    --max-width: 1440px;
+    /* всі відступи (обмеження далі якого не розширюється)*/
+
+}
+
+html body {
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1rem;        /* = 16px */
+    line-height: 1.2;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--txt-secondary-color);
+}
+
+em {
+    font-style: italic;
+}
+.h1 {
+  font-size: 6.75rem;   /* 108 / 16 */
+  line-height: 1.1;
+  font-weight: 500;
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+.h2 {
+  font-size: 4rem;      /* 64 / 16 */
+  line-height: 1;
+}
+
+.h3 {
+  font-size: 1.5rem;    /* 24 / 16 */
+  line-height: 1.2;
+}
+
+.h4 {
+  font-size: 1.5rem;    /* 24 / 16 */
+}
+
+.h5 {
+  font-size: 1rem;      /* 16 / 16 */
+}
+
+.h6 {
+  font-size: 1.25rem;   /* 20 / 16 */
+}
+
+
+h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--secondary-color);
+}
+
+
+.nav-link {
+  font-size: 1.25rem; /* як h6 */
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--txt-secondary-color);
+}
