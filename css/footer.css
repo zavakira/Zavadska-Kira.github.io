@@ -1,0 +1,60 @@
+footer {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 12.5rem;
+}
+
+.footer-horse {
+  width: 300px;
+  margin-bottom: 40px;
+}
+
+
+.footer-btn {
+  display: inline-block;
+  background-color: var(--btn-color);
+  color: var(--secondary-color);
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 20px 60px;
+  border-radius: 100px;
+}
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-label {
+  text-transform: uppercase;
+}
+
+.footer-title {
+  font-family: "Unbounded", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.footer-author {
+  text-align: right;
+}
+
+.footer-name {
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.footer-text {
+  text-transform: uppercase;
+  max-width: 500px;
+  margin-bottom: 40px;
+}

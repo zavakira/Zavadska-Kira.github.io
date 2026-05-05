@@ -1,0 +1,88 @@
+.hero {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.hero-scene {
+  position: relative;
+  min-height: 820px;
+}
+
+/* центральний текст */
+.hero-content {
+  position: absolute;
+  left: 50%;
+  top: 380px;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 3;
+  width: 100%;
+}
+.hero-content .h1 {
+  margin-bottom: 44px;
+}
+
+/* базові стилі для всіх фото */
+.hero-photo,
+.hero-object {
+  position: absolute;
+  display: block;
+  object-fit: cover;
+}
+
+
+/* 1. низ право */
+.hero_lamp {
+  width: 280px;
+  right: 20px;
+  bottom: -70px;
+  transform: rotate(4deg);
+}
+
+/* 2. верх право-центр */
+.hero_balcon {
+  width: 160px;
+  right: 440px;
+  top: 8px;
+  transform: rotate(-8deg);
+}
+
+/* 3. низ центр */
+.hero_blue {
+  width: 212px;
+  left: 590px;
+  bottom: -50px;
+  transform: rotate(11deg);
+}
+
+/* 4. верх право */
+.hero_forest {
+  width: 250px;
+  left: -30px;
+  top: 20px;
+  transform: rotate(9deg);
+}
+
+/* 5. верх ліво-центр */
+.hero_glass {
+  width: 310px;
+  left: 330px;
+  top: 61px;
+  transform: rotate(-10deg);
+}
+
+/* 6. низ ліво */
+.hero_park {
+  width: 370px;
+  left: -100px;
+  top: 595px;
+  transform: rotate(-10deg);
+}
+
+/* 6. верх право */
+.hero_town {
+  width: 280px;
+  right: -20px;
+  top: 30px;
+  transform: rotate(10deg);
+}

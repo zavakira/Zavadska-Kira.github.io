@@ -7,12 +7,17 @@
     <title>Мій лендинг</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet">
 
-    <link rel="stylesheet" href="css /normalize.css">
-    <link rel="stylesheet" href="css /layout.css">
-    <link rel="stylesheet" href="css /style.css">
-    <link rel="stylesheet" href="css /header.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body id="top">
@@ -33,15 +38,64 @@
 
     <section class="hero">
         <div class="inside">
-            <div class="hero-content">
-                <h1 class="h1">між рядків</h1>
-                <p class="h2">мої найулюбленіші місця</p>
+            <div class="hero-scene">
+                <div class="hero-content">
+                    <h1 class="h1">між рядків</h1>
+                    <p class="h3">мої найулюбленіші місця у львові</p>
+                </div>
+                <img src="img/hero_balcon.jpg" alt="balcon" class="hero-photo hero_balcon">
+                <img src="img/hero_blue.png" alt="blue" class="hero-photo hero_blue">
+                <img src="img/hero_forest.png" alt="forest" class="hero-photo hero_forest">
+                <img src="img/hero_glass.png" alt="glass" class="hero-photo hero_glass">
+                <img src="img/hero_lamp.png" alt="lamp" class="hero-photo hero_lamp">
+                <img src="img/hero_park.png" alt="park" class="hero-photo hero_park">
+                <img src="img/hero_town.png" alt="town" class="hero-photo hero_town">
             </div>
-            <img src="img/img-hero1.jpg" alt="hero1">
         </div>
     </section>
-    <footer></footer>
 
+    <section class="about" id="about">
+        <div class="inside">
+            <div class="about-card">
+                <div class="about-bg"></div>
+                <div class="about-content">
+                    <h2 class="about-title">про проєкт</h2>
+
+                    <p class="about-text">
+                        За весь час проживання тут (у Львові), я із зацікавленістю дитини та
+                        обережністю дорослої збирала — і досі збираю — особливі місцини, де
+                        в потрібний момент можна сховатись, або навпаки, розкрити душу на розхрист.
+                    </p>
+
+                    <p class="about-text">
+                        Ділюсь своїми місцями сили та улюбленими маршрутами, гуляючи якими
+                        заново закохуєшся в життя.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="inside">
+            <div class="footer-top">
+                <img src="img/footer-horse.png" alt="horse" class="footer-horse">
+                <p class="footer-text h6">Поділіться своїми улюбленими cozy місцинками або цілими маршрутами у Львівчику
+                </p>
+                <a href="#" class="footer-btn">Осьо тут</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-label h6">Проєкт:</p>
+                <p class="footer-title">між рядків Львова</p>
+                <div class="footer-author">
+                    <p class="footer-label h6">Автор:</p>
+                    <p class="footer-name h6">Завадська Кіра</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/parallax.js"></script>
 </body>
 
 </html>

@@ -48,7 +48,7 @@ em {
 
 .h3 {
   font-size: 1.5rem;    /* 24 / 16 */
-  line-height: auto;
+  line-height: 1.2;
   color: var(--secondary-color);
   text-transform: uppercase;
 }
@@ -63,7 +63,7 @@ em {
 
 .h6 {
   font-size: 1.25rem;   /* 20 / 16 */
-  line-height: auto;
+  line-height: 1.2;
   color: var(--txt-secondary-color);
   text-transform: uppercase;
 }
