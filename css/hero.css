@@ -22,7 +22,6 @@
   margin-bottom: 44px;
 }
 
-/* базові стилі для всіх фото */
 .hero-photo,
 .hero-object {
   position: absolute;
@@ -30,8 +29,6 @@
   object-fit: cover;
 }
 
-
-/* 1. низ право */
 .hero_lamp {
   width: 280px;
   right: 20px;
@@ -79,7 +76,7 @@
   transform: rotate(-10deg);
 }
 
-/* 6. верх право */
+/* 7. верх право */
 .hero_town {
   width: 280px;
   right: -20px;
