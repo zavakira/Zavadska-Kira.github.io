@@ -13,28 +13,30 @@ footer {
 
 .footer-horse {
   width: 300px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 
 .footer-btn {
   display: inline-block;
-  background-color: var(--btn-color);
-  color: var(--secondary-color);
+  background-color: var(--secondary-color);
+  color: var(--background-color);
   font-size: 1.25rem;
   text-transform: uppercase;
   text-decoration: none;
   padding: 20px 60px;
   border-radius: 100px;
+  font-weight: 400;
 }
 .footer-bottom {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
 }
 
 .footer-label {
   text-transform: uppercase;
+  padding-bottom: 8px;
 }
 
 .footer-title {
@@ -46,6 +48,7 @@ footer {
 
 .footer-author {
   text-align: right;
+  padding-bottom: 8px;
 }
 
 .footer-name {
@@ -54,7 +57,7 @@ footer {
 }
 
 .footer-text {
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   max-width: 500px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }

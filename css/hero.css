@@ -1,5 +1,5 @@
 .hero {
-  padding-top: 20px;
+  padding-top: 80px;
   padding-bottom: 40px;
 }
 
@@ -42,6 +42,7 @@
   right: 440px;
   top: 8px;
   transform: rotate(-8deg);
+  transition-delay: 5s;
 }
 
 /* 3. низ центр */
@@ -82,4 +83,42 @@
   right: -20px;
   top: 30px;
   transform: rotate(10deg);
+}
+.hero-photo {
+  transition: transform 1s cubic-bezier(0.35, 0.46, 0.45, 0.94), opacity 0.8s ease-in-out;
+}
+
+.hero_lamp.hidden {
+  transform: rotate(4deg) translate(200px, 300px);
+  opacity: 0;
+}
+
+.hero_balcon.hidden {
+  transform: rotate(-8deg) translate(200px, -200px);
+  opacity: 0;
+}
+
+.hero_blue.hidden {
+  transform: rotate(11deg) translate(300px, 100px);
+  opacity: 0;
+}
+
+.hero_forest.hidden {
+  transform: rotate(9deg) translate(-300px, -100px);
+  opacity: 0;
+}
+
+.hero_glass.hidden {
+  transform: rotate(-10deg) translate(-200px, 200px);
+  opacity: 0;
+}
+
+.hero_park.hidden {
+  transform: rotate(-10deg) translate(-300px, 300px);
+  opacity: 0;
+}
+
+.hero_town.hidden {
+  transform: rotate(10deg) translate(300px, -300px);
+  opacity: 0;
 }
