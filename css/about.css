@@ -9,7 +9,7 @@
   border-radius: 36px;
   overflow: hidden;
   min-height: 820px;
-  
+
 }
 
 .about-bg {
@@ -48,6 +48,41 @@
   color: var(--txt-secondary-color);
 }
 
-.about-text + .about-text {
+.about-text+.about-text {
   margin-top: 36px;
+}
+
+@media screen and (max-width: 767px) {
+
+  .about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .about-card {
+    border-radius: 24px;
+    min-height: unset;
+  }
+
+  .about-content {
+    padding-top: 100px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 48px;
+    max-width: 100%;
+  }
+
+  .about-title {
+    margin-bottom: 40px;
+    font-size: 2rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .about-text+.about-text {
+    margin-top: 24px;
+  }
 }

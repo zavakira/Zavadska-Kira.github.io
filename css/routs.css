@@ -211,3 +211,126 @@
   transform: translate(200px, 100px);
   opacity: 0;
 }
+
+@media screen and (max-width: 767px) {
+
+    .routes {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .routes-header {
+        margin-bottom: 60px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .routes-tabs {
+        order: 1;
+    } 
+    /* Туфлі — над заголовком */
+    .routes-shoes {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 160px;
+        margin: 40px auto 20px;
+        display: block;
+        order: 2;
+    }
+
+    .routes-shoes.hidden {
+        transform: translate(-100px, -60px);
+        opacity: 0;
+    }
+
+    /* Коктель — ховаємо */
+    .routes-coctail {
+        display: none !important;
+    }
+
+    .routes-title {
+        margin-bottom: 32px;
+        font-size: 2rem;
+        order: 1;
+    }
+
+    /* Таби — вертикально, форма як на дизайні */
+    .routes-tabs {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 6px;
+        border-radius: 20px;
+    }
+
+    .routes-tab {
+        padding: 14px 48px;
+        font-size: 1rem;
+        text-align: center;
+        border-radius: 14px;
+    }
+
+    /* Вступ маршруту */
+    .route-intro {
+        margin-bottom: 60px;
+    }
+
+    .route-intro .h1 {
+        font-size: 3rem;
+        margin-bottom: 16px;
+    }
+
+    .route-intro .h2 {
+        padding-left: 0;
+        font-size: 1.2rem;
+    }
+
+    /* Основний лейаут */
+    .route-body {
+        flex-direction: column;
+    }
+
+    .route-marker {
+        display: none;
+    }
+
+    .route-sidebar {
+        display: none;
+    }
+
+    /* Картки місць */
+    .route-places {
+        gap: 48px;
+        width: 100%;
+    }
+
+    .route-place {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .route-place-info {
+        max-width: 100%;
+        gap: 8px;
+    }
+
+    .route-place-title {
+        font-size: 1.2rem;
+    }
+
+    .route-place-text {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .route-place-img {
+        width: 100%;
+        border-radius: 12px;
+    }
+    
+}
