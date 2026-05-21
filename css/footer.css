@@ -14,6 +14,12 @@ footer {
 .footer-horse {
   width: 300px;
   margin-bottom: 60px;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.8s ease;
+}
+
+.footer-horse.horse-hidden {
+    transform: translate(-200px, -100px);
+    opacity: 0;
 }
 
 
@@ -28,6 +34,7 @@ footer {
   border-radius: 100px;
   font-weight: 400;
 }
+
 .footer-bottom {
   display: flex;
   align-items: flex-end;
@@ -60,4 +67,58 @@ footer {
   /*text-transform: uppercase;*/
   max-width: 500px;
   margin-bottom: 60px;
+}
+
+@media screen and (max-width: 767px) {
+
+  footer {
+    padding-top: 40px;
+    padding-bottom: 32px;
+  }
+
+  .footer-top {
+    margin-bottom: 40px;
+  }
+
+  .footer-horse {
+    width: 180px;
+    margin-bottom: 32px;
+  }
+
+  .footer-text {
+    font-size: 1rem;
+    max-width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .footer-btn {
+    font-size: 1rem;
+    padding: 16px 40px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+  }
+
+  .footer-title {
+    font-size: 1.8rem;
+    line-height: 1.1;
+  }
+
+  .footer-author {
+    text-align: left;
+    padding-bottom: 0;
+  }
+
+  .footer-label {
+    font-size: 0.8rem;
+    margin-top: 16px;
+  }
+
+  .footer-name {
+    font-size: 0.8rem;
+    margin-top: -5px;
+  }
 }

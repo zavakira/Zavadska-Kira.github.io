@@ -36,7 +36,7 @@
 }
 
 .nav-icon.open span {
-  background: #fff;
+  background: var(--txt-secondary-color);
 }
 
 .nav-icon span:nth-child(1) {

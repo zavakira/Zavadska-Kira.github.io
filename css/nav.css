@@ -1,7 +1,29 @@
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
 nav {
-    background: linear-gradient(to bottom, 
-     var(--background-color) 60%, 
-     rgba(255, 255, 255, 0) 100%);  /* linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));  */
+    background: linear-gradient(to bottom,
+            var(--background-color) 60%,
+            rgba(255, 255, 255, 0) 100%);
+    /* linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));  */
     background-repeat: no-repeat;
     background-position: bottom;
     position: fixed;
@@ -12,11 +34,11 @@ nav {
 }
 
 nav.topfixed {
-    background: linear-gradient(to bottom, 
-    var(--background-color) 60%, 
-    rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to bottom,
+            var(--background-color) 60%,
+            rgba(255, 255, 255, 0) 100%);
     position: fixed;
-    
+
 }
 
 nav.topfixed::before {
@@ -25,20 +47,28 @@ nav.topfixed::before {
 
 .navbar {
     display: flex;
-    justify-content: space-between;     /* Схема вирівнювання лого та меню (desktop) по основній осі (main axis) */
-    align-items: center;                /* Схема вирівнювання лого та меню (desktop) по додатковій осі (cross axis) */
-    margin-left: auto;                  /* Центрування блоку всередині nav по-горизонталі */
-    margin-right: auto;                 /* Центрування блоку всередині nav по-горизонталі */
-    max-width: var(--max-width);        /* Ширина .nav-inside не більше 1280px */
-    padding: 12px 24px;        /* Внутрішні відступи */
+    justify-content: space-between;
+    /* Схема вирівнювання лого та меню (desktop) по основній осі (main axis) */
+    align-items: center;
+    /* Схема вирівнювання лого та меню (desktop) по додатковій осі (cross axis) */
+    margin-left: auto;
+    /* Центрування блоку всередині nav по-горизонталі */
+    margin-right: auto;
+    /* Центрування блоку всередині nav по-горизонталі */
+    max-width: var(--max-width);
+    /* Ширина .nav-inside не більше 1280px */
+    padding: 12px 24px;
+    /* Внутрішні відступи */
     position: relative;
     transition: all .3s ease-in-out;
 }
 
 .topfixed .navbar {
     justify-content: space-between;
-    padding-top: 12px;      /* Внутрішні відступи після прокрутки */
-    padding-bottom: 12px;   /* Внутрішні відступи після прокрутки */
+    padding-top: 12px;
+    /* Внутрішні відступи після прокрутки */
+    padding-bottom: 12px;
+    /* Внутрішні відступи після прокрутки */
     transform: scale(0.9);
 }
 
@@ -48,7 +78,8 @@ nav.topfixed::before {
     line-height: .7;
     transform: scale(1.3);
     transform-origin: left center;
-    align-items: center;    /* Вирівнювання по додатковій осі */
+    align-items: center;
+    /* Вирівнювання по додатковій осі */
     transition: all .3s ease-in-out;
     text-decoration: none;
 }
@@ -74,7 +105,8 @@ nav.topfixed::before {
 
 .logo span {
     color: var(--logo-color-1);
-    font-size: .8rem; /* 0.85 * font-size body */
+    font-size: .8rem;
+    /* 0.85 * font-size body */
     line-height: 1.4;
     letter-spacing: .035em;
     font-weight: 600;
@@ -93,9 +125,12 @@ nav .navbar {
 
 .navigation a {
     display: block;
-    color: var(--txt-tetriary-color);  /* Основний колір меню */
-    font-size: 1.25rem;           /* Розмір тексту меню */
-    font-weight: 400;           /* Накреслення тексту меню */
+    color: var(--txt-tetriary-color);
+    /* Основний колір меню */
+    font-size: 1.25rem;
+    /* Розмір тексту меню */
+    font-weight: 400;
+    /* Накреслення тексту меню */
     letter-spacing: .025em;
     padding: 8px 0 18px;
     margin-left: 32px;
@@ -105,16 +140,19 @@ nav .navbar {
 }
 
 .navigation a:hover {
-    color: var(--secondary-color); /* Основний колір меню (hover) */
+    color: var(--secondary-color);
+    /* Основний колір меню (hover) */
 }
 
 .topfixed .navigation a {
-    color: var(--txt-tetriary-color); /* Колір меню після прокрутки */
-    
+    color: var(--txt-tetriary-color);
+    /* Колір меню після прокрутки */
+
 }
 
 .topfixed .navigation a:hover {
-    color: var(--secondary-color); /* Колір меню (hover) після прокрутки */
+    color: var(--secondary-color);
+    /* Колір меню (hover) після прокрутки */
 }
 
 .navigation ul {
@@ -128,60 +166,62 @@ nav .navbar {
     vertical-align: middle;
 }
 
-a:hover, a:focus, a:active {
+a:hover,
+a:focus,
+a:active {
     text-decoration: none;
 }
 
 .overlay {
     background-color: #333;
-    opacity:.3;
+    opacity: .3;
     position: absolute;
-    left:0; top:0;
-    width:100dvw;
-    height:100dvh;
+    left: 0;
+    top: 0;
+    width: 100dvw;
+    height: 100dvh;
 }
+
 
 @media screen and (max-width: 767px) {
 
-    .navbar {
-        justify-content: space-between;
-    }
-
     .navigation ul {
-        background-color: var(--bg-nav-2);
+        background-color: var(--background-color);
         display: flex;
         flex-direction: column;
-        visibility: visible;
         justify-content: flex-start;
         align-items: flex-start;
-        width: 70vw; /* 70% from Viewport width */
-        height: 100dvh; /* 100% Dynamic viewport height */
-        position: absolute;
+        width: 100%;
+        height: 100dvh;
+        position: fixed;
         right: 0;
         top: 0;
         padding-top: 80px;
-        transform: translateY(-100%);
+        padding-left: 24px;
+        transform: translateX(100%);
         transition: transform .35s ease;
+        z-index: 98;
     }
 
     .open .navigation ul {
-        transform: translateY(0);
+        transform: translateX(0);
     }
 
     .open ul li {
-        /* display: block; */
         width: 100%;
-        border-bottom: 1px solid #444;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
         margin-left: 0;
     }
 
     .open ul a {
-        color: var(--nav-color-3);  /* Основний колір мобільного меню */
-        padding-top: 12px;
-        padding-bottom: 12px;
+        color: var(--txt-secondary-color);
+        font-size: 1.5rem;
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 
-    .open ul a:hover {
-        color: var(--nav-color-4);  /* Основний колір мобільного меню (hover) */
+    nav.topfixed .navbar {
+        transform: scale(1);
+        padding: 8px 24px;
     }
 }

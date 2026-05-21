@@ -173,62 +173,62 @@
     }
 
     .hero_forest {
-        width: 190px;
-        left: -15px;
-        top: 80px;
+        width: 130px;
+        left: -35px;
+        top: 10px;
         transform: rotate(9deg);
     }
 
     .hero_balcon {
-        width: 160px;
-        right: -15px;
+        width: 90px;
+        right: 85px;
         left: auto;
-        top: 100px;
-        transform: rotate(-8deg);
+        top: -2px;
+        transform: rotate(2deg);
         transition-delay: 0s;
     }
 
     .hero_glass {
-        width: 160px;
-        left: -10px;
-        top: 230px;
+        width: 140px;
+        left: 10px;
+        top: 170px;
         bottom: auto;
         transform: rotate(-10deg);
         z-index: 1;
     }
 
     .hero_town {
-        width: 150px;
-        right: -10px;
+        width: 160px;
+        right: -40px;
         left: auto;
-        top: 220px;
-        transform: rotate(10deg);
+        top: 160px;
+        transform: rotate(-15deg);
         z-index: 1;
     }
 
     .hero_park {
         width: 190px;
-        left: -10px;
-        top: 570px;
+        left: -40px;
+        top: 520px;
         bottom: auto;
-        transform: rotate(-10deg);
+        transform: rotate(-7deg);
     }
 
     .hero_blue {
-        width: 160px;
-        left: 50%;
-        top: 600px;
+        width: 90px;
+        left: 55%;
+        top: 690px;
         bottom: auto;
         transform: translateX(-50%) rotate(11deg);
     }
 
     .hero_lamp {
-        width: 190px;
-        right: -10px;
+        width: 150px;
+        right: 20px;
         left: auto;
-        top: 560px;
+        top: 460px;
         bottom: auto;
-        transform: rotate(4deg);
+        transform: rotate(1deg);
     }
 
     .hero_lamp.hidden {

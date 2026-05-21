@@ -64,3 +64,40 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.7 });
 
 observer.observe(routesHeader);
+
+const routeImages = document.querySelectorAll('.route-place-img');
+
+routeImages.forEach(img => {
+    img.classList.add('img-hidden');
+});
+
+const imgObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.remove('img-hidden');
+            imgObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.2 });
+
+routeImages.forEach(img => imgObserver.observe(img));
+
+
+
+const footerHorse = document.querySelector('.footer-horse');
+
+if (footerHorse) {
+    footerHorse.classList.add('horse-hidden');
+
+    const horseObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                footerHorse.classList.remove('horse-hidden');
+            } else {
+                footerHorse.classList.add('horse-hidden');
+            }
+        });
+    }, { threshold: 0.3 });
+
+    horseObserver.observe(footerHorse);
+}

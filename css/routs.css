@@ -10,18 +10,18 @@
 }
 
 .routes-shoes {
-  position: absolute;
-  left: 40px;
-  top: 0px;
-  width: 230px;
+    position: absolute;
+    left: 40px;
+    top: 0px;
+    width: 230px;
 }
 
 .routes-coctail {
-  position: absolute;
-  right: 40px;
-  bottom: -20px;
-  width: 200px;
-  transform: rotate(10deg);
+    position: absolute;
+    right: 40px;
+    bottom: -20px;
+    width: 200px;
+    transform: rotate(10deg);
 }
 
 .routes-title {
@@ -34,7 +34,7 @@
     background-color: var(--secondary-color);
     padding: 6px;
     border-radius: 100px;
-    
+
 }
 
 .routes-tab {
@@ -70,11 +70,11 @@
 }
 
 .route-intro .h1 {
-  margin-bottom: 46px;
+    margin-bottom: 46px;
 }
 
 .route-intro .h2 {
-  padding-left: 120px;
+    padding-left: 120px;
 }
 
 /* основний лейаут */
@@ -85,8 +85,8 @@
     align-items: flex-start;
     gap: 0;
 }
- 
- 
+
+
 /* --- Вертикальна лінія-маркер зліва --- */
 .route-marker {
     flex-shrink: 0;
@@ -97,27 +97,29 @@
     margin-right: 120px;
     position: relative;
 }
- 
+
 /* Крапка зверху на маркері */
 .route-marker::before {
-    content: '';
+    display: none;
+}
+
+.route-marker-sign {
     position: absolute;
     top: var(--marker-offset, 0px);
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 16px;
-    height: 16px;
-    background: #E63946;
-    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
     transition: top 0.3s ease;
 }
- 
- 
+
+
 /* ===========================
    ROUTE PLACES
    flex-direction: column — список карток
    =========================== */
- 
+
 .route-places {
     display: flex;
     flex-direction: column;
@@ -125,8 +127,8 @@
     flex: 1 1 0;
     min-width: 0;
 }
- 
- 
+
+
 /* --- Одна картка місця --- */
 .route-place {
     display: flex;
@@ -134,7 +136,7 @@
     align-items: flex-start;
     gap: 20%;
 }
- 
+
 .route-place-info {
     flex: 1 1 0;
     min-width: 0;
@@ -143,22 +145,22 @@
     flex-direction: column;
     gap: 12px;
 }
- 
+
 .route-place-title {
     color: var(--main-color);
 }
- 
+
 .route-place-text {
     line-height: 1.6;
 }
- 
+
 .route-place-img {
     flex-shrink: 0;
     width: 340px;
     object-fit: cover;
     border-radius: 12px;
 }
- 
+
 .route-sidebar {
     flex-shrink: 0;
     width: 200px;
@@ -166,18 +168,18 @@
     position: sticky;
     top: 84px;
     align-self: flex-start;
- 
+
     border: 2px solid var(--secondary-color);
     padding: 20px 16px;
     border-radius: 12px;
 }
- 
+
 
 .route-sidebar-title {
     margin-bottom: 18px;
     color: var(--txt-secondary-color);
 }
- 
+
 .route-sidebar-list {
     list-style: none;
     display: flex;
@@ -193,23 +195,33 @@
 .route-sidebar-link:hover {
     opacity: 0.6;
 }
+
 [id^="route"] {
     scroll-margin-top: 30vh;
 }
 
 .routes-shoes,
 .routes-coctail {
-  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.8s ease;
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.8s ease;
 }
 
 .routes-shoes.hidden {
-  transform: translate(-200px, -100px);
-  opacity: 0;
+    transform: translate(-200px, -100px);
+    opacity: 0;
 }
 
 .routes-coctail.hidden {
-  transform: translate(200px, 100px);
-  opacity: 0;
+    transform: translate(200px, 100px);
+    opacity: 0;
+}
+
+.route-place-img {
+    transition: transform 1s cubic-bezier(0.35, 0.46, 0.45, 0.94), opacity 0.8s ease-in-out;
+}
+
+.route-place-img.img-hidden {
+    opacity: 0;
+    transform: rotate(3deg) translateY(30px);
 }
 
 @media screen and (max-width: 767px) {
@@ -229,7 +241,8 @@
 
     .routes-tabs {
         order: 1;
-    } 
+    }
+
     /* Туфлі — над заголовком */
     .routes-shoes {
         position: relative;
@@ -332,5 +345,24 @@
         width: 100%;
         border-radius: 12px;
     }
-    
+
+    .route-intro .h1 {
+        font-size: 2.2rem;
+        margin-bottom: 16px;
+        word-break: keep-all;
+    }
+
+    .route-intro .h2 {
+        padding-left: 0;
+        font-size: 1rem;
+    }
+
+    /* Маркер-лінія — ховаємо */
+    .route-marker {
+        display: none;
+    }
+
+    .route-place-title::before {
+        display: none;
+    }
 }

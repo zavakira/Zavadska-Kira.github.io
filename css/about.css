@@ -52,6 +52,11 @@
   margin-top: 36px;
 }
 
+[id^="about"] {
+    scroll-margin-top: -10vh;
+}
+
+
 @media screen and (max-width: 767px) {
 
   .about {
@@ -75,6 +80,11 @@
   .about-title {
     margin-bottom: 40px;
     font-size: 2rem;
+    word-break: break-word;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
   }
 
   .about-text {

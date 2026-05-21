@@ -10,15 +10,18 @@ document.querySelectorAll('.routes-tab').forEach(tab => {
     });
 });
 
+
+
 // Маркер що слідує за активним місцем
 function updateMarker() {
     const places = document.querySelectorAll('.route.active .route-place');
-    const marker = document.querySelector('.route.active .route-marker::before');
-    const markerLine = document.querySelector('.route.active .route-marker');
-    
-    if (!markerLine) return;
+    const marker = document.querySelector('.route.active .route-marker');
 
+    if (!marker) return;
+
+    const markerRect = marker.getBoundingClientRect();
     const middle = window.innerHeight / 2;
+
     let closestPlace = null;
     let closestDistance = Infinity;
 
@@ -33,10 +36,9 @@ function updateMarker() {
     });
 
     if (closestPlace) {
-        const markerRect = markerLine.getBoundingClientRect();
-        const placeRect = closestPlace.getBoundingClientRect();
-        const offset = placeRect.top - markerRect.top + placeRect.height / 2;
-        markerLine.style.setProperty('--marker-offset', offset + 'px');
+        const titleRect = closestPlace.querySelector('.route-place-title').getBoundingClientRect();
+        const offset = titleRect.top - markerRect.top;
+        marker.style.setProperty('--marker-offset', offset + 'px');
     }
 }
 
